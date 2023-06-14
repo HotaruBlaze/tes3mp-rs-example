@@ -1,0 +1,3 @@
+[submodule "src/plugin"]
+	path = src/plugin
+	url = https://github.com/HotaruBlaze/tes3mp-rs.git

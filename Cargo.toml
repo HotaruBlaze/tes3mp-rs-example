@@ -1,0 +1,13 @@
+[package]
+name = "tes3mp-plugin"
+description = "Stubs for creating a TES3MP server plugin"
+readme = "README.md"
+keywords = ["tes3mp", "morrowind"]
+homepage = "https://github.com/HotaruBlaze/tes3mp-rs"
+version = "0.8.1"
+license = "AGPL-3.0-or-later"
+authors = ["Phoenix <DeriousHD@gmail.com>"]
+edition = "2018"
+
+[lib]
+crate-type = ["staticlib", "cdylib"]
