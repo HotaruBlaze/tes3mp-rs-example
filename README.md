@@ -18,13 +18,18 @@ ln -s ../external/plugin/tes3mp-plugin/src/plugin src/plugin`
 2) edit `tes3mp-server-default.cfg` and append the file to plugins, such as the following
 
 ### Note: You __cannot__ have a space after the comma.
-
+**If using Linux:**
 ```
 [Plugins]
 home = ./server
 plugins = serverCore.lua,../lib/libtes3mp_plugin.so
 ```
-
+**If using Windows:**
+```
+[Plugins]
+home = ./server
+plugins = serverCore.lua,..\lib\tes3mp_plugin.dll
+```
 If successful you should see something like the following the following in tes3mp's console output
 ```
 [2023-06-14 18:58:21] [WARN]: Script function pointer not found: CreateTimerEx
