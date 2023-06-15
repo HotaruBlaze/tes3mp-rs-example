@@ -2,8 +2,16 @@
 
 This is an example project for tes3mp-rs, using my personal fork for tes3mp 0.8.1 [Here](https://github.com/HotaruBlaze/tes3mp-rs)
 
-# How to get started
+# How to get started: Windows
 `git clone --recurse-submodules https://github.com/HotaruBlaze/tes3mp-rs-example.git`
+<br><br> To fix linking issues, run the following command using powershell with __Administrator__ to generate a system link in the root of the project.<br><br>
+`New-Item -ItemType symboliclink -Path "src\plugin" -Target "external\plugin\tes3mp-plugin\src\plugin"`
+# How to get started: Linux
+```sh
+git clone --recurse-submodules https://github.com/HotaruBlaze/tes3mp-rs-example.git`
+cd tes3mp-rs-example
+ln -s ../external/plugin/tes3mp-plugin/src/plugin src/plugin`
+```
 
 # How to install the build project
 1) Place the compiled file to `server/lib`
